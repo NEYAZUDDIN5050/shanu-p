@@ -103,7 +103,7 @@ export default function Footer() {
             &copy; {year} PhysioCare. All rights reserved.
           </p>
           <p className="text-xs text-text-muted">
-            Built with care for your recovery journey.
+            Developed and maintained by Neyaz.
           </p>
         </div>
       </div>
