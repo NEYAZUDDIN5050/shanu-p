@@ -1,0 +1,12 @@
+{
+  "name": "physio-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Physiotherapy doctor website — MERN monorepo",
+  "scripts": {
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "build:client": "npm run build --prefix client",
+    "lint": "npm run lint --prefix client && npm run lint --prefix server"
+  }
+}
