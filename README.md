@@ -50,7 +50,10 @@ See `server/.env.example` and `client/.env.example` for required configuration.
 | Stage | Status |
 |-------|--------|
 | 1 — Scaffolding + theme system | Done |
-| 2 — Layout & navigation | Next |
+| 2 — Layout & navigation | Done |
+| 3 — Hero section | Done |
+| 4 — Therapy services | Done |
+| 5 — Backend foundation | Next |
 
 ### Stage 1 checklist
 

@@ -73,4 +73,8 @@
     font-family: var(--font-heading);
     letter-spacing: -0.02em;
   }
+
+  .font-heading {
+    font-family: var(--font-heading);
+  }
 }

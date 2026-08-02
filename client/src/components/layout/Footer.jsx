@@ -62,12 +62,12 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-text-muted">
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                <span>123 Wellness Avenue, Health City 400001</span>
+                <span>ALAMGANJ PATNA, BIHAR</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 shrink-0 text-accent" />
                 <a href="tel:+911234567890" className="hover:text-accent">
-                  +91 12345 67890
+                  +91 123456789
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
@@ -103,7 +103,7 @@ export default function Footer() {
             &copy; {year} PhysioCare. All rights reserved.
           </p>
           <p className="text-xs text-text-muted">
-            Developed and maintained by Neyaz.
+            Developed and Maintained by Neyaz.
           </p>
         </div>
       </div>

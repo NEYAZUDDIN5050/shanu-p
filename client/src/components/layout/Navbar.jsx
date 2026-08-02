@@ -49,7 +49,7 @@ export default function Navbar() {
               <Activity className="h-5 w-5" strokeWidth={2.2} />
             </span>
             <span className="font-heading text-lg font-bold tracking-tight text-text">
-              Physio<span className="text-accent">Care</span>
+              FIT AGAIN BY<span className="text-accent">-PHYSIO</span>
             </span>
           </a>
 
