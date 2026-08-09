@@ -4,6 +4,12 @@ import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
 import { connectDB } from './config/db.js';
 import { errorHandler } from './middleware/errorHandler.js';
+import { notFound } from './middleware/notFound.js';
+import appointmentRoutes from './routes/appointmentRoutes.js';
+import certificationRoutes from './routes/certificationRoutes.js';
+import productRoutes from './routes/productRoutes.js';
+import testimonialRoutes from './routes/testimonialRoutes.js';
+import therapyRoutes from './routes/therapyRoutes.js';
 
 dotenv.config();
 
@@ -24,6 +30,13 @@ app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', message: 'PhysioCare API is running' });
 });
 
+app.use('/api/therapies', therapyRoutes);
+app.use('/api/appointments', appointmentRoutes);
+app.use('/api/certifications', certificationRoutes);
+app.use('/api/testimonials', testimonialRoutes);
+app.use('/api/products', productRoutes);
+
+app.use(notFound);
 app.use(errorHandler);
 
 const start = async () => {

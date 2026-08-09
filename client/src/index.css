@@ -78,3 +78,17 @@
     font-family: var(--font-heading);
   }
 }
+
+.cert-slider-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+.certifications-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}

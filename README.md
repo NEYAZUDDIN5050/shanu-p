@@ -27,10 +27,23 @@ physiocare/
 
 ```bash
 cd server
-cp .env.example .env   # edit secrets as needed
+cp .env.example .env   # set MONGODB_URI (Atlas or local)
 npm install
 npm run dev            # http://localhost:5000
+npm run seed:therapies # optional — sync therapy catalog to MongoDB
 ```
+
+**API routes (CRUD):**
+
+| Resource | Base path |
+|----------|-----------|
+| Therapies | `GET/POST /api/therapies`, `GET/PUT/DELETE /api/therapies/:id` |
+| Appointments | `GET/POST /api/appointments`, … |
+| Certifications | `GET/POST /api/certifications`, … |
+| Testimonials | `GET/POST /api/testimonials`, … |
+| Products (v2 stub) | `GET/POST /api/products`, … |
+
+Use `server/api.http` in Thunder Client or VS Code REST Client to exercise each route after `npm run dev`.
 
 ### Frontend
 
@@ -53,7 +66,9 @@ See `server/.env.example` and `client/.env.example` for required configuration.
 | 2 — Layout & navigation | Done |
 | 3 — Hero section | Done |
 | 4 — Therapy services | Done |
-| 5 — Backend foundation | Next |
+| 5 — Backend foundation | Done |
+| 6 — Certifications slider | Done |
+| 7 — Book appointment | Next |
 
 ### Stage 1 checklist
 

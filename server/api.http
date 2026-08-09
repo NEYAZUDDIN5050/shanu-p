@@ -1,0 +1,78 @@
+@baseUrl = http://localhost:5000
+
+### Health
+GET {{baseUrl}}/api/health
+
+### Therapies — list
+GET {{baseUrl}}/api/therapies
+
+### Therapies — create
+POST {{baseUrl}}/api/therapies
+Content-Type: application/json
+
+{
+  "name": "Manual Therapy",
+  "slug": "manual-therapy",
+  "shortDescription": "Hands-on joint and soft tissue techniques.",
+  "description": "Skilled manual techniques to reduce pain and restore mobility.",
+  "duration": "40 min sessions",
+  "iconKey": "activity"
+}
+
+### Appointments — create
+POST {{baseUrl}}/api/appointments
+Content-Type: application/json
+
+{
+  "name": "Test Patient",
+  "phone": "+911234567890",
+  "email": "patient@example.com",
+  "preferredDate": "2026-08-15T10:00:00.000Z",
+  "preferredTime": "10:30 AM",
+  "therapyType": "Sports Injury Rehab",
+  "message": "First visit"
+}
+
+### Appointments — list
+GET {{baseUrl}}/api/appointments
+
+### Certifications — create
+POST {{baseUrl}}/api/certifications
+Content-Type: application/json
+
+{
+  "title": "BPT Certification",
+  "issuer": "Medical Council",
+  "imageUrl": "https://placehold.co/400x300/png",
+  "sortOrder": 1
+}
+
+### Certifications — list
+GET {{baseUrl}}/api/certifications
+
+### Testimonials — create
+POST {{baseUrl}}/api/testimonials
+Content-Type: application/json
+
+{
+  "patientName": "Riya K.",
+  "quote": "Dr. Sharma helped me return to running pain-free.",
+  "rating": 5
+}
+
+### Testimonials — list
+GET {{baseUrl}}/api/testimonials
+
+### Products — create (v2 stub)
+POST {{baseUrl}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Resistance Band Kit",
+  "description": "Home exercise kit",
+  "price": 899,
+  "isActive": false
+}
+
+### Products — list
+GET {{baseUrl}}/api/products

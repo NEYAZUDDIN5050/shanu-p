@@ -67,7 +67,7 @@ export default function Hero() {
               className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-4 py-2 text-sm font-medium text-text shadow-sm backdrop-blur-sm"
             >
               <Award className="h-4 w-4 text-accent" strokeWidth={2} />
-              <span>BPT, MPT — Sports &amp; Musculoskeletal Specialist</span>
+              <span>BPT— Sports &amp; Musculoskeletal Specialist</span>
             </motion.div>
 
             <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-text sm:text-5xl lg:text-6xl xl:text-[4.25rem]">

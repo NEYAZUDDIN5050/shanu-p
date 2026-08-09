@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
+import Certifications from '../components/sections/Certifications';
 import Hero from '../components/sections/Hero';
 import Therapies from '../components/sections/Therapies';
 
 const sections = [
   { id: 'about', label: 'About', stage: 9 },
-  { id: 'certifications', label: 'Certifications', stage: 6 },
   { id: 'testimonials', label: 'Testimonials', stage: 8 },
   { id: 'booking', label: 'Book Appointment', stage: 7 },
   { id: 'contact', label: 'Contact', stage: 9 },
@@ -41,6 +41,7 @@ export default function Home() {
     <>
       <Hero />
       <Therapies />
+      <Certifications />
       {sections.map((section) => (
         <PlaceholderSection key={section.id} {...section} />
       ))}

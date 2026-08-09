@@ -28,7 +28,7 @@ export default function Footer() {
                 <Activity className="h-5 w-5" strokeWidth={2.2} />
               </span>
               <span className="font-heading text-lg font-bold text-text">
-                Physio<span className="text-accent">Care</span>
+                FIT AGAIN BY<span className="text-accent">-PHYSIO</span>
               </span>
             </a>
             <p className="max-w-xs text-sm leading-relaxed text-text-muted">
@@ -66,14 +66,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 shrink-0 text-accent" />
-                <a href="tel:+911234567890" className="hover:text-accent">
-                  +91 123456789
+                <a href="tel:+91 8340698872" className="hover:text-accent">
+                 +91-8340698872
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 shrink-0 text-accent" />
-                <a href="mailto:hello@physiocare.com" className="hover:text-accent">
-                  hello@physiocare.com
+                <a href="urrahmanzeeshan1726@gmail.com" className="hover:text-accent">
+                  urrahmanzeeshan1726@gmail.com
                 </a>
               </li>
             </ul>
@@ -100,7 +100,7 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
           <p className="text-sm text-text-muted">
-            &copy; {year} PhysioCare. All rights reserved.
+            &copy; {year} FIT AGAIN BY-PHYSIO. All rights reserved.
           </p>
           <p className="text-xs text-text-muted">
             Developed & Maintained by Neyaz.
