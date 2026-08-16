@@ -1,5 +1,43 @@
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Instagram, Facebook, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
+
+// lucide-react 1.0 removed brand/logo icons (Instagram, Facebook, Linkedin, etc.)
+// See: https://lucide.dev/guide/react/migration
+// These are small inline replacements so we don't need an extra package just for 3 icons.
+function InstagramIcon({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="2" />
+      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" />
+      <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
+    </svg>
+  );
+}
+
+function FacebookIcon({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <path
+        d="M14 9h2.5V6H14c-2.2 0-3.5 1.4-3.5 3.6V12H8v3h2.5v6h3v-6h2.4l.5-3h-2.9v-1.9c0-.8.3-1.1 1.5-1.1Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
+function LinkedinIcon({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" strokeWidth="2" />
+      <path
+        d="M7.5 10.5v6M7.5 7.8v.01M11.5 16.5v-3.3c0-1.2.9-2 2-2s2 .8 2 2v3.3"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
 
 const contactPoints = [
   {
@@ -23,9 +61,9 @@ const contactPoints = [
 ];
 
 const socials = [
-  { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-  { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
-  { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+  { icon: InstagramIcon, href: 'https://instagram.com', label: 'Instagram' },
+  { icon: FacebookIcon, href: 'https://facebook.com', label: 'Facebook' },
+  { icon: LinkedinIcon, href: 'https://linkedin.com', label: 'LinkedIn' },
 ];
 
 export default function Contact() {
@@ -74,7 +112,7 @@ export default function Contact() {
                     aria-label={label}
                     className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-text-muted transition-colors hover:border-accent/40 hover:text-accent"
                   >
-                    <Icon className="h-4.5 w-4.5" strokeWidth={2} />
+                    <Icon className="h-4.5 w-4.5" />
                   </a>
                 ))}
               </div>
