@@ -6,7 +6,7 @@ import About from '../components/sections/About';
 import Testimonials from '../components/sections/Testimonials';
 import Appointments from '../components/sections/Appointments';
 import Contacts from "../components/sections/Contacts";
-
+import YoutubeContent from "../components/sections/YoutubeContent";
 export default function Home() {
   return (
     <>
@@ -15,6 +15,7 @@ export default function Home() {
       <Certifications />
       <About />
       <Testimonials />
+      <YoutubeContent />
       <Appointments />
       <Contacts />
     </>
