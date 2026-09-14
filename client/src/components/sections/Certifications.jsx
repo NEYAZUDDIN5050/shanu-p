@@ -1,10 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
 import { motion } from 'framer-motion';
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useCallback } from 'react';
 import { Autoplay, FreeMode } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { fallbackCertifications } from '../../data/fallbackCertifications';
-import { fetchCertifications } from '../../lib/axios';
 import Lightbox from '../ui/Lightbox';
 
 import 'swiper/css';
@@ -44,7 +43,7 @@ export default function Certifications() {
 
   const { data, isLoading, isError } = useQuery({
     queryKey: ['certifications'],
-    queryFn: fetchCertifications,
+    // queryFn: fetchCertifications,
   });
 
   const items = useMemo(() => {
@@ -81,11 +80,7 @@ export default function Certifications() {
             Recognized training and credentials that uphold the highest standards of
             physiotherapy care. Hover to pause — click any badge for full view.
           </p>
-          {isError && (
-            <p className="mt-3 text-sm text-accent-2">
-              Could not reach the server — showing sample credentials.
-            </p>
-          )}
+       
         </motion.div>
 
         {isLoading ? (

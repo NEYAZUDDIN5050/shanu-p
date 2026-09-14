@@ -12,12 +12,12 @@ import {
 } from 'lucide-react';
 import { useRef } from 'react';
 import Button from '../ui/Button';
-import doctorImage from '../../assets/shanu-img.PNG';
 
-// TODO: add two more clinic/practice photos to src/assets and swap these in.
-// Reusing shanu-img.PNG three times for now so the layout previews correctly.
-import doctorImageWide from '../../assets/shanu-img.PNG';
-import doctorImageClose from '../../assets/shanu-img.PNG';
+// NOTE: adjust the file extensions below to whatever you actually saved
+// (e.g. .jpg / .jpeg / .png) — imports must match the real file on disk.
+import doctorImagePrimary from '../../assets/fit-pic.jpeg';
+import doctorImageSession from '../../assets/Fit-pic-2.jpeg';
+import doctorImageCloseUp from '../../assets/fit-pic-3.jpeg';
 
 // TODO: swap these for Dr. Zeeshan's real credentials/certifications
 const credentials = [
@@ -102,7 +102,7 @@ export default function About() {
                 className="relative col-span-2 aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-surface shadow-[var(--shadow)] sm:col-span-1 sm:aspect-auto lg:row-span-2"
               >
                 <img
-                  src={doctorImage}
+                  src={doctorImagePrimary}
                   alt="Dr. Zeeshan Ur Rehman consulting a patient"
                   className="absolute inset-0 h-full w-full object-cover object-center"
                 />
@@ -124,7 +124,7 @@ export default function About() {
                 className="relative aspect-square overflow-hidden rounded-2xl border border-border bg-surface shadow-[var(--shadow)]"
               >
                 <img
-                  src={doctorImageWide}
+                  src={doctorImageSession}
                   alt="Guided rehabilitation session in progress"
                   className="absolute inset-0 h-full w-full object-cover object-center"
                 />
@@ -138,7 +138,7 @@ export default function About() {
                 className="relative aspect-square overflow-hidden rounded-2xl border border-border bg-surface shadow-[var(--shadow)]"
               >
                 <img
-                  src={doctorImageClose}
+                  src={doctorImageCloseUp}
                   alt="Close-up of hands-on physiotherapy technique"
                   className="absolute inset-0 h-full w-full object-cover object-center"
                 />
@@ -200,7 +200,7 @@ export default function About() {
                   className="flex items-center gap-3 rounded-xl border border-border bg-surface/60 p-3 text-left backdrop-blur-sm transition-colors hover:border-accent/40 hover:bg-surface"
                 >
                   <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-accent/10">
-                    <Icon className="h-4.5 w-4.5 text-accent" strokeWidth={2} />
+                    <Icon className="h-[18px] w-[18px] text-accent" strokeWidth={2} />
                   </span>
                   <span className="text-sm text-text-muted">{label}</span>
                 </div>
